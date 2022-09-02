@@ -1,0 +1,26 @@
+<div class=" flex border background w-full h-full align-items-center justify-content-center">
+  <div class=" w-24rem h-25rem border-round-sm bg-white shadow-1 p-3">
+    <div class=" w-full h-full" >
+        <!-- header --> 
+        <div class=" w-full h-3rem flex align-items-center justify-content-center">
+            <p class="text-lg font-medium">Login</p>
+        </div>
+        <div class="h_c flex-shrink-1 md:flex-shrink-0 flex flex-column  pt-4 ">
+            <div class="field">
+                <label for="email">Email address</label>
+                <input id="email" type="email" [(ngModel)]="email" class="text-base   bg-white p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+            </div>
+            <div class="field">
+                <label for="password">Password</label>
+                <input id="password" type="password" [(ngModel)]="password" class="text-base  bg-white p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+            </div>
+            <div class="w-full h-3rem mt-4 "><button pButton class="w-full w-12 w-100" (click)=" isLogin()"  type="submit" label="Submit"></button></div>
+            <div class="w-full h-5rem flex flex-row align-items-center">
+
+            <p class="text-xs text-color font-semibold p-2">Not a member?</p><p (click)=" openSignUp()" class="text-xs text-primary font-bold cursor-pointer">Sign Up</p>
+        </div>
+        </div>
+        
+    </div>
+  </div> 
+</div>

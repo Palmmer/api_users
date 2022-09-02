@@ -1,0 +1,73 @@
+<div class="flex w-full h-full p-2 flex-column gap-2">
+    <div
+      class="flex w-full p-2 flex-column h-10rem gap-2 border-round-sm surface-100 border-1 border-300"
+    >
+      <div class="flex flex-column h-full">
+        <input type="text" placeholder="Title" class="w-full h-2rem" pInputText [(ngModel)]="title_post"/>
+        <textarea
+          [rows]="5"
+          [cols]="30"
+          class="w-full h-2rem"
+          pInputTextarea
+          placeholder="Create Posts"
+          [(ngModel)]="content_post"
+        ></textarea>
+      </div>
+      <div class="flex w-full h-full justify-content-end">
+        <button
+          pButton
+          (click)="createPost()"
+          type="button"
+          class="w-10rem"
+          label="Create"
+        ></button>
+      </div>
+    </div>
+    <div
+      class="flex w-full p-3 gap-2 flex-column h_c overflow-y-auto border-round-sm surface-100 border-1 border-300"
+    >
+      <p-card *ngFor="let card of cards; let i = index">
+        <ng-template pTemplate="header">
+          <p class="p-3" *ngIf="!card.is_clicked_update">{{ card.title }}</p>
+          <div class="p-3" *ngIf="card.is_clicked_update">
+            <input type="text" class="w-full h-auto" pInputText [(ngModel)]="update_content"/>
+           </div>
+          <p class="p-3">
+            {{ card.body }}
+          </p>
+      
+        </ng-template>
+  
+        <ng-template pTemplate="footer">
+          <div class="flex flex-row gap-2 justify-content-end">
+            <span class="p-buttonset">
+              <button
+                (click)="openUpdatePost(card)"
+                *ngIf="!card.is_clicked_update"
+                pButton
+                type="button"
+                label="Update"
+                icon="pi pi-check"
+              ></button>
+              <button
+                *ngIf="card.is_clicked_update"
+                (click)="UpdatePost(card)"
+                pButton
+                type="button"
+                label="Save"
+                icon="pi pi-check"
+              ></button>
+              <button
+                pButton
+                type="button"
+                label="Delete"
+                (click)="deletePost(card)"
+                icon="pi pi-trash"
+              ></button>
+             
+            </span>
+          </div>
+        </ng-template>
+      </p-card>
+    </div>
+  </div>

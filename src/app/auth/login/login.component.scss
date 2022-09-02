@@ -1,0 +1,16 @@
+.border {
+    border: 1px solid black;
+}
+
+.background { 
+    background-image: url(../../../assets/image/background.png);
+
+}
+
+.h_c {
+ height: calc(100% - 3rem);
+}
+
+.w-100 {
+    width: 100% !important;
+}

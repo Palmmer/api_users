@@ -1,0 +1,50 @@
+
+<div class="flex w-full h-full p-2 flex-column gap-2">
+    <div
+      class="flex w-full p-3 gap-2 flex-column h_c overflow-y-auto border-round-sm surface-100 border-1 border-300"
+    >
+      <p-card *ngFor="let card of cards">
+        <ng-template pTemplate="header">
+          <p class="p-3" *ngIf="!card.is_clicked_update">{{ card.title }}</p> 
+          <div class="p-3" *ngIf="card.is_clicked_update">
+            <input type="text" class="w-full h-auto" pInputText [(ngModel)]="update_content"/>
+           </div>
+          <p class="p-3" >
+            {{ card.body }}
+          </p>
+         
+        </ng-template>
+  
+        <ng-template pTemplate="footer">
+          <div class="flex flex-row gap-2 justify-content-end">
+            <span class="p-buttonset">
+              <button
+                (click)="openUpdatePost(card)"
+                *ngIf="!card.is_clicked_update"
+                pButton
+                type="button"
+                label="Update"
+                icon="pi pi-check"
+              ></button>
+              <button
+              *ngIf="card.is_clicked_update"
+              (click)="UpdatePost(card)"
+              pButton
+              type="button"
+              label="Save"
+              icon="pi pi-check"
+            ></button>
+              <button
+              (click)="deletePost(card)"
+                pButton
+                type="button"
+                label="Delete"
+                icon="pi pi-trash"
+              ></button>
+            </span>
+          </div>
+        </ng-template>
+      </p-card>
+      
+    </div>
+  </div>
