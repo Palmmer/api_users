@@ -1,3 +1,4 @@
+
 El Login no esta terminado como deberia todo lo demas funciona bien! Cuenta para ingresar a admin: email: 'admin@mail.com', password: 'admin'
 
   Cuenta para ingresar como usuario
@@ -7,6 +8,27 @@ Pasos para levantar la app en localhost
 1.- clonar el repositorio 2.- entrar a visual studio code y abrir la terminal 3.- correr el comando npm install para instalar dependencias 4.- correr el comando ng serve para correr la app 5.- abrir un navegador y en su barra de navegacion pegar lo siguiente: http://localhost:4200/ 6.- realizar el test necesario
 
 Muchas gracias por la oportunidad, quedo a la espera de su feedback.
+=======
+El Login no esta terminado como deberia todo lo demas funciona bien! 
+ Cuenta para ingresar a admin: 
+ email: 'admin@mail.com',
+      password: 'admin'
+      
+      Cuenta para ingresar como usuario
+      password: 9uQFF1Lh,  email: atuny0@sohu.com
+
+
+Pasos para levantar la app en localhost
+
+ 1.- clonar el repositorio 
+ 2.- entrar a visual studio code y abrir la terminal 
+ 3.- correr el comando npm install para instalar dependencias
+ 4.- correr el comando ng serve para correr la app
+ 5.- abrir un navegador y en su barra de navegacion pegar lo siguiente: http://localhost:4200/
+ 6.- realizar el test necesario
+ 
+ 
+ Muchas gracias por la oportunidad, quedo a la espera de su feedback.
 
 
 # TestUsers
@@ -36,3 +58,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
