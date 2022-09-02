@@ -1,3 +1,14 @@
+El Login no esta terminado como deberia todo lo demas funciona bien! Cuenta para ingresar a admin: email: 'admin@mail.com', password: 'admin'
+
+  Cuenta para ingresar como usuario
+  password: 9uQFF1Lh,  email: atuny0@sohu.com
+Pasos para levantar la app en localhost
+
+1.- clonar el repositorio 2.- entrar a visual studio code y abrir la terminal 3.- correr el comando npm install para instalar dependencias 4.- correr el comando ng serve para correr la app 5.- abrir un navegador y en su barra de navegacion pegar lo siguiente: http://localhost:4200/ 6.- realizar el test necesario
+
+Muchas gracias por la oportunidad, quedo a la espera de su feedback.
+
+
 # TestUsers
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
